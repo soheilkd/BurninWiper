@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	android:id="@+id/content_main"
+	tools:showIn="@layout/activity_main">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:text="Mode"/>
+			<RadioGroup
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginBottom="10dp"
+				android:id="@+id/ModeRadioGroup">
+				<RadioButton
+					android:text="Color Rotation"
+					android:checked="true"
+					android:id="@+id/RadioButton1" />
+				<RadioButton
+					android:text="Black / White"
+					android:id="@+id/RadioButton2" />
+				<RadioButton
+					android:text="White Only"
+					android:id="@+id/RadioButton3" />
+			</RadioGroup>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Timer" />
+			<Spinner
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/TimerSpinner"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Start"
+				android:id="@+id/StartButton"/>
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Check"
+				android:id="@+id/CheckButton"/>
+		</LinearLayout>
+	</LinearLayout>
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:id="@+id/DonateButton"
+		android:text="Donate"/>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:elevation="2dp"
+		android:visibility="invisible"
+		android:id="@+id/RelativeLayout1" 
+		/>
+</RelativeLayout>

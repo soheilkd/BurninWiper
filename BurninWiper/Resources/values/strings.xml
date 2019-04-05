@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BurninWiper</string>
+    <string name="action_settings">Settings</string>
+
+	<string-array name="timer_array">
+		<item>No Timer</item>
+		<item>30s</item>
+		<item>1m</item>
+		<item>2m</item>
+		<item>5m</item>
+		<item>10m</item>
+		<item>30m</item>
+		<item>1h</item>
+	</string-array>
+</resources>
