@@ -21,6 +21,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="4dp"
+                android:textSize="20dp"
 				android:text="Mode"/>
 			<RadioGroup
 				android:layout_width="wrap_content"
@@ -29,15 +30,17 @@
 				android:layout_marginBottom="10dp"
 				android:id="@+id/ModeRadioGroup">
 				<RadioButton
-					android:text="Color Rotation"
-					android:checked="true"
-					android:id="@+id/RadioButton1" />
+                    android:layout_height="48dp"
+                android:textSize="18dp"
+					android:text="Color Rotation" />
+                <RadioButton
+                    android:layout_height="48dp"
+                android:textSize="18dp"
+                    android:text="Black / White" />
 				<RadioButton
-					android:text="Black / White"
-					android:id="@+id/RadioButton2" />
-				<RadioButton
-					android:text="White Only"
-					android:id="@+id/RadioButton3" />
+                    android:layout_height="48dp"
+                android:textSize="18dp"
+					android:text="White Only" />
 			</RadioGroup>
 		</LinearLayout>
 		<LinearLayout
@@ -46,24 +49,28 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+                android:textSize="18dp"
 				android:text="Timer" />
 			<Spinner
 				android:layout_width="150dp"
-				android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:textSize="18dp"
 				android:id="@+id/TimerSpinner"/>
 		</LinearLayout>
 		<LinearLayout
 			android:layout_marginTop="10dp"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content">
+            <Button
+                android:layout_width="128dp"
+                android:layout_height="64dp"
+                android:text="Start"
+                android:textSize="18dp"
+                android:id="@+id/StartButton"/>
 			<Button
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Start"
-				android:id="@+id/StartButton"/>
-			<Button
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
+                android:layout_width="128dp"
+                android:layout_height="64dp"
+                android:textSize="18dp"
 				android:text="Check"
 				android:id="@+id/CheckButton"/>
 		</LinearLayout>
@@ -75,11 +82,4 @@
 		android:layout_alignParentRight="true"
 		android:id="@+id/DonateButton"
 		android:text="Donate"/>
-	<RelativeLayout
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:elevation="2dp"
-		android:visibility="invisible"
-		android:id="@+id/RelativeLayout1" 
-		/>
 </RelativeLayout>
