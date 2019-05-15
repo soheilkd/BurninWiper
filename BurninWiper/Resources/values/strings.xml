@@ -4,12 +4,12 @@
 
 	<string-array name="timer_array">
 		<item>No Timer</item>
-		<item>30s</item>
-		<item>1m</item>
-		<item>2m</item>
 		<item>5m</item>
 		<item>10m</item>
+		<item>20m</item>
 		<item>30m</item>
 		<item>1h</item>
+		<item>2h</item>
+		<item>3h</item>
 	</string-array>
 </resources>
