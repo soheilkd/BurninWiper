@@ -9,6 +9,7 @@ using Android.Views;
 using Android.Widget;
 using Plugin.InAppBilling;
 using System;
+using static Android.Widget.AdapterView;
 
 namespace BurninWiper
 {
@@ -40,6 +41,14 @@ namespace BurninWiper
 			donateButton.Click += DonateButton_Click;
 
 			LoadPreferences();
+
+			TimerSpinner.ItemSelected += (_, __) =>
+			 {
+				 var spinnerTextView = TimerSpinner.GetChildAt(0) as TextView;
+				 spinnerTextView?.SetTextSize(Android.Util.ComplexUnitType.Sp, 20);
+				 spinnerTextView?.SetTextColor(Android.Content.Res.ColorStateList.ValueOf(Android.Graphics.Color.White));
+			 };
+
 		}
 
 		static bool falseflag = false;

@@ -26,7 +26,7 @@ namespace BurninWiper
 
 		public static void AttempPurchase(int productIndex)
 		{
-			AttempPurchase(DonationProductIds[productIndex]);
+			_ = AttempPurchase(DonationProductIds[productIndex]);
 		}
 
 		public static async Task AttempPurchase(string productId)

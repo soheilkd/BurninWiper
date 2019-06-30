@@ -7,39 +7,44 @@
 	android:layout_height="match_parent"
 	app:layout_behavior="@string/appbar_scrolling_view_behavior"
 	android:id="@+id/content_main"
-	tools:showIn="@layout/activity_main">
+	tools:showIn="@layout/activity_main"
+    android:background="@color/material_grey_800">
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="vertical"
-		android:layout_marginLeft="10dp"
-		android:layout_marginTop="10dp">
+		android:layout_marginLeft="10sp"
+		android:layout_marginTop="10sp">
 		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content">
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="4dp"
-                android:textSize="20dp"
+				android:layout_marginTop="4sp"
+                android:textColor="@color/foreground_material_dark"
+                android:textSize="20sp"
 				android:text="Mode"/>
 			<RadioGroup
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginLeft="5dp"
-				android:layout_marginBottom="10dp"
+				android:layout_marginLeft="5sp"
+				android:layout_marginBottom="10sp"
 				android:id="@+id/ModeRadioGroup">
 				<RadioButton
-                    android:layout_height="48dp"
-                android:textSize="18dp"
+                    android:layout_height="48sp"
+                android:textSize="18sp"
+                android:textColor="@color/foreground_material_dark"
 					android:text="Color Rotation" />
                 <RadioButton
-                    android:layout_height="48dp"
-                android:textSize="18dp"
+                    android:layout_height="48sp"
+                android:textSize="18sp"
+                android:textColor="@color/foreground_material_dark"
                     android:text="Black / White" />
 				<RadioButton
-                    android:layout_height="48dp"
-                android:textSize="18dp"
+                    android:layout_height="48sp"
+                android:textSize="18sp"
+                android:textColor="@color/foreground_material_dark"
 					android:text="White Only" />
 			</RadioGroup>
 		</LinearLayout>
@@ -49,29 +54,36 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-                android:textSize="18dp"
+                android:textSize="18sp"
+                android:textColor="@color/foreground_material_dark"
 				android:text="Timer" />
 			<Spinner
-				android:layout_width="150dp"
-                android:layout_height="48dp"
-                android:textSize="18dp"
+				android:layout_width="150sp"
+                android:layout_height="48sp"
+                android:textSize="24sp"
+                android:layout_marginLeft="30sp"
 				android:id="@+id/TimerSpinner"/>
 		</LinearLayout>
 		<LinearLayout
-			android:layout_marginTop="10dp"
+			android:layout_marginTop="10sp"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content">
             <Button
-                android:layout_width="128dp"
-                android:layout_height="64dp"
+                android:layout_width="128sp"
+                android:layout_height="64sp"
                 android:text="Start"
-                android:textSize="18dp"
+                android:textSize="18sp"
+                android:textColor="@color/foreground_material_dark"
+                android:background="@color/button_material_dark"
                 android:id="@+id/StartButton"/>
 			<Button
-                android:layout_width="128dp"
-                android:layout_height="64dp"
-                android:textSize="18dp"
+                android:layout_width="128sp"
+                android:layout_height="64sp"
+                android:textSize="18sp"
 				android:text="Check"
+                android:layout_marginLeft="30sp"
+                android:textColor="@color/foreground_material_dark"
+                android:background="@color/button_material_dark"
 				android:id="@+id/CheckButton"/>
 		</LinearLayout>
 	</LinearLayout>

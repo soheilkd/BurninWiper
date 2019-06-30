@@ -80,13 +80,30 @@ namespace BurninWiper
 			Finish();
 		}
 
+
 		public void Start()
 		{
 			Window.SetFlags(WindowManagerFlags.KeepScreenOn, WindowManagerFlags.KeepScreenOn);
-			var prefs = PreferenceManager.GetDefaultSharedPreferences(this);
-			ColorMode = prefs.GetInt("ModeIndex", 0);
-			ShutdownTimerIndex = prefs.GetInt("TimerIndex", 0);
+			ApplyPreferences();
 			MakeAppImmersive();
+			StartThread();
+			shutdownTimer.Start();
+		}
+
+		private void StartThread()
+		{
+			ColorChanger = new Thread(ColorRotation);
+			ColorChanger.Start();
+		}
+
+		public void ShowGray()
+		{
+			MakeAppImmersive();
+			ColorLinearLayout.Background = Colors.Gray;
+		}
+		private void ApplyPreferences()
+		{
+			var prefs = PreferenceManager.GetDefaultSharedPreferences(this);
 			if (prefs.GetBoolean("IsChecking", false))
 			{
 				var edit = prefs.Edit();
@@ -94,16 +111,10 @@ namespace BurninWiper
 				edit.Commit();
 				ShutdownTimerIndex = 0;
 				ColorMode = 4;
+				return;
 			}
-			ColorChanger = new Thread(ColorRotation);
-			ColorChanger.Start();
-			shutdownTimer.Start();
-		}
-
-		public void ShowGray()
-		{
-			MakeAppImmersive();
-			ColorLinearLayout.Background = Colors.Gray;
+			ColorMode = prefs.GetInt("ModeIndex", 0);
+			ShutdownTimerIndex = prefs.GetInt("TimerIndex", 0);
 		}
 	}
 }

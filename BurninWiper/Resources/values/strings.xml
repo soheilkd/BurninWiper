@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">BurninWiper</string>
     <string name="action_settings">Settings</string>
-
 	<string-array name="timer_array">
 		<item>No Timer</item>
 		<item>5m</item>

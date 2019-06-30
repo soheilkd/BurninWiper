@@ -36,12 +36,14 @@ namespace BurninWiper
 			var button3 = FindViewById<Button>(Resource.Id.DonateButton3);
 			var button4 = FindViewById<Button>(Resource.Id.DonateButton4);
 			var button5 = FindViewById<Button>(Resource.Id.DonateButton5);
+			var button6 = FindViewById<Button>(Resource.Id.ReturnButton);
 
 			button1.Click += (_, __) => Donation.AttempPurchase(0);
 			button2.Click += (_, __) => Donation.AttempPurchase(1);
 			button3.Click += (_, __) => Donation.AttempPurchase(2);
 			button4.Click += (_, __) => Donation.AttempPurchase(3);
 			button5.Click += (_, __) => Donation.AttempPurchase(4);
+			button6.Click += (_, __) => Finish();
 		}
 	}
 }

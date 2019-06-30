@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-	android:paddingLeft="10dp"
-	android:paddingTop="10dp"
+	android:paddingLeft="10sp"
+	android:paddingTop="10sp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Since app doesn't contain any ad, I don't have neither major nor minor income on it.
-I'd appreciate that if you consider donating to keep me motivated for developing small-tool apps (just like this) without any ads or data collection."/>
+		android:text=""/>
 	<Button
     android:layout_width="wrap_content"
-    android:layout_height="64dp"
+    android:layout_height="64sp"
 	android:id="@+id/DonateButton1"
 	android:text="Buy me a small coffee"/>
 	<Button
     android:layout_width="wrap_content"
-    android:layout_height="64dp"
+    android:layout_height="64sp"
 	android:id="@+id/DonateButton2"
 	android:text="Buy me a hot chocolate"/>
 	<Button
     android:layout_width="wrap_content"
-    android:layout_height="64dp"
+    android:layout_height="64sp"
 	android:id="@+id/DonateButton3"
 	android:text="Buy me a chicken wrap"/>
 	<Button
     android:layout_width="wrap_content"
-    android:layout_height="64dp"
+    android:layout_height="64sp"
 	android:id="@+id/DonateButton4"
 	android:text="Buy me a movie ticket"/>
 	<Button
     android:layout_width="wrap_content"
-    android:layout_height="64dp"
+    android:layout_height="64sp"
 	android:id="@+id/DonateButton5"
 	android:text="Buy me a shirt"/>
+	<Button
+    android:layout_width="wrap_content"
+    android:layout_height="64sp"
+	android:id="@+id/ReturnButton"
+	android:text="Return"/>
 </LinearLayout>
