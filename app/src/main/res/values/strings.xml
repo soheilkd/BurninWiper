@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Burnin Wiper</string>
+
+    <string name="ui_modeMain">Mode</string>
+    <string name="ui_modeFirst">Color Rotation</string>
+    <string name="ui_modeSecond">Black / White</string>
+    <string name="ui_modeThird">White Only</string>
+    <string name="ui_timerMain">Timer</string>
+    <string name="ui_start">Start</string>
+    <string name="ui_check">Check</string>
+    <string name="ui_donate">Donate</string>
+
+    <string name="donateUi_main">Donation</string>
+    <string name="donateUi_0">Buy Me A Small Coffee</string>
+    <string name="donateUi_1">Buy Me A Hot Chocolate</string>
+    <string name="donateUi_2">Buy Me A Wrap</string>
+    <string name="donateUi_3">Buy Me A Movie Ticket</string>
+    <string name="donateUi_4">Buy Me A Shirt</string>
+    <string name="donateUi_return">Return</string>
+
+	<string name="title_activity_main">Burnin Wiper</string>
+	<string name="title_activity_color"> </string>
+	<string name="title_activity_donation">Donation</string>
+</resources>
