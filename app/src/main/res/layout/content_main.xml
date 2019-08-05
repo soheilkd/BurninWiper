@@ -9,7 +9,7 @@
 		tools:showIn="@layout/activity_main"
 		android:fitsSystemWindows="true"
 		android:background="#404040"
-		tools:context="soheilkd.BurninWiper.MainActivity">
+		tools:context="soheilkd.burninwiper.MainActivity">
 	<RelativeLayout android:layout_width="match_parent"
 					android:layout_height="match_parent"
 					tools:ignore="UselessParent">
