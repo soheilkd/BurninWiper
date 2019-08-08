@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Burnin Wiper</string>
+	<string name="donateUi_main">기부</string>
+	<string name="ui_check">검사</string>
+	<string name="donateUi_return">반환</string>
+	<string name="ui_donate">기부</string>
+	<string name="ui_modeFirst">색 회전</string>
+	<string name="ui_modeMain">방법</string>
+	<string name="ui_modeSecond">검정색과 흰색</string>
+	<string name="ui_modeThird">화이트 만</string>
+	<string name="ui_start">스타트</string>
+	<string name="ui_timerMain">시간제 노동자</string>
+	<string name="ui_timerNone">타이머 없음</string>
+</resources>

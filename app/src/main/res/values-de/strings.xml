@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Burnin Wiper</string>
+	<string name="donateUi_main">Spende</string>
+	<string name="donateUi_return">Rückkehr</string>
+	<string name="ui_check">Prüfen</string>
+	<string name="ui_donate">Spenden</string>
+	<string name="ui_modeFirst">Farbrotation</string>
+	<string name="ui_modeMain">Modus</string>
+	<string name="ui_modeSecond">Schwarz und weiß</string>
+	<string name="ui_modeThird">Nur weiss</string>
+	<string name="ui_start">Start</string>
+	<string name="ui_timerMain">Timer</string>
+	<string name="ui_timerNone">Kein Timer</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Burnin Wiper</string>
+	<string name="donateUi_main">کمک مالی</string>
+	<string name="donateUi_return">برگشت</string>
+	<string name="ui_check">بررسی</string>
+	<string name="ui_donate">کمک مالی</string>
+	<string name="ui_modeFirst">چرخش رنگ</string>
+	<string name="ui_modeMain">حالت</string>
+	<string name="ui_modeSecond">سیاه / سفید</string>
+	<string name="ui_modeThird">فقط سفید</string>
+	<string name="ui_start">شروع</string>
+	<string name="ui_timerMain">تایمر</string>
+	<string name="ui_timerNone">بدون تایمر</string>
+</resources>

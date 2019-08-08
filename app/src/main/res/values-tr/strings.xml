@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Burnin Wiper</string>
+	<string name="donateUi_main">Bağış</string>
+	<string name="donateUi_return">Dönüş</string>
+	<string name="ui_check">Kontrol</string>
+	<string name="ui_donate">Bağışlamak</string>
+	<string name="ui_modeFirst">Renk dönüşü</string>
+	<string name="ui_modeMain">kip</string>
+	<string name="ui_modeSecond">Siyah ve beyaz</string>
+	<string name="ui_modeThird">Sadece beyaz</string>
+	<string name="ui_start">Başla</string>
+	<string name="ui_timerMain">Kronometre</string>
+	<string name="ui_timerNone">Zamanlayıcı Yok</string>
+</resources>
