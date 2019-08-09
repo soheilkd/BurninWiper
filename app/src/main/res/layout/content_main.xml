@@ -9,7 +9,7 @@
 		tools:showIn="@layout/activity_main"
 		android:fitsSystemWindows="true"
 		android:background="#404040"
-		tools:context="soheilkd.burninwiper.MainActivity">
+		tools:context="soheilkd.BurninWiper.MainActivity">
 	<RelativeLayout android:layout_width="match_parent"
 					android:layout_height="match_parent"
 					tools:ignore="UselessParent">
@@ -37,16 +37,19 @@
 					<RadioButton
 							android:layout_height="48sp"
 							android:layout_width="wrap_content"
+							android:id="@+id/modeRadioButton1"
 							android:textSize="18sp"
 							android:text="@string/ui_modeFirst" />
 					<RadioButton
 							android:layout_height="48sp"
 							android:layout_width="wrap_content"
+							android:id="@+id/modeRadioButton2"
 							android:textSize="18sp"
 							android:text="@string/ui_modeSecond" />
 					<RadioButton
 							android:layout_height="48sp"
 							android:layout_width="wrap_content"
+							android:id="@+id/modeRadioButton3"
 							android:textSize="18sp"
 							android:text="@string/ui_modeThird" />
 				</RadioGroup>
