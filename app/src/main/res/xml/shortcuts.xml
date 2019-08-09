@@ -1,0 +1,33 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+	<shortcut
+			android:shortcutId="colorrotate"
+			android:enabled="true"
+			android:icon="@drawable/ic_shortcut1"
+			android:shortcutShortLabel="@string/ui_modeFirst">
+		<intent
+				android:action="soheilkd.BurninWiper.runfirstmode"
+				android:targetPackage="soheilkd.BurninWiper"
+				android:targetClass="soheilkd.BurninWiper.ColorActivity"/>
+	</shortcut>
+	<shortcut
+			android:shortcutId="blackandwhite"
+			android:enabled="true"
+			android:icon="@drawable/ic_shortcut2"
+			android:shortcutShortLabel="@string/ui_modeSecond">
+		<intent
+				android:action="soheilkd.BurninWiper.runsecondmode"
+				android:targetPackage="soheilkd.BurninWiper"
+				android:targetClass="soheilkd.BurninWiper.ColorActivity"/>
+	</shortcut>
+	<shortcut
+			android:shortcutId="whiteonly"
+			android:enabled="true"
+			android:icon="@drawable/ic_shortcut3"
+			android:shortcutShortLabel="@string/ui_modeThird">
+		<intent
+				android:action="soheilkd.BurninWiper.runthirdmode"
+				android:targetPackage="soheilkd.BurninWiper"
+				android:targetClass="soheilkd.BurninWiper.ColorActivity"/>
+	</shortcut>
+	<!-- Specify more shortcuts here. -->
+</shortcuts>
