@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Burnin Wiper</string>
-	<string name="donateUi_main">Bağış</string>
 	<string name="donateUi_return">Dönüş</string>
 	<string name="ui_check">Kontrol</string>
 	<string name="ui_donate">Bağışlamak</string>
@@ -12,4 +11,6 @@
 	<string name="ui_start">Başla</string>
 	<string name="ui_timerMain">Kronometre</string>
 	<string name="ui_timerNone">Zamanlayıcı Yok</string>
+	<string name="title_activity_color">"Renkli ekran "</string>
+	<string name="title_activity_donation">Bağış</string>
 </resources>

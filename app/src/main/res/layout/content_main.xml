@@ -97,6 +97,6 @@
 				android:layout_alignParentRight="true"
 				android:layout_alignParentEnd="true"
 				android:id="@+id/DonateButton"
-				android:text="Donate"/>
+				android:text="@string/ui_donate"/>
 	</RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

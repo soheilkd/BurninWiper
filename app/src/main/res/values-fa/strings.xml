@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Burnin Wiper</string>
-	<string name="donateUi_main">کمک مالی</string>
 	<string name="donateUi_return">برگشت</string>
 	<string name="ui_check">بررسی</string>
 	<string name="ui_donate">کمک مالی</string>
@@ -12,4 +11,6 @@
 	<string name="ui_start">شروع</string>
 	<string name="ui_timerMain">تایمر</string>
 	<string name="ui_timerNone">بدون تایمر</string>
+	<string name="title_activity_color">صفحه نمایش رنگی</string>
+	<string name="title_activity_donation">کمک مالی</string>
 </resources>

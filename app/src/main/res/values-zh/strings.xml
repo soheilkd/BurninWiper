@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Burnin Wiper</string>
-	<string name="donateUi_main">捐款</string>
 	<string name="donateUi_return">返回</string>
 	<string name="ui_check">校验</string>
 	<string name="ui_donate">捐</string>
@@ -12,4 +11,6 @@
 	<string name="ui_start">开始</string>
 	<string name="ui_timerMain">计时器</string>
 	<string name="ui_timerNone">没有计时器</string>
+	<string name="title_activity_color">彩色显示屏</string>
+	<string name="title_activity_donation">捐款</string>
 </resources>

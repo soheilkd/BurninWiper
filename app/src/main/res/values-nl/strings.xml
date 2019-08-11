@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Burnin Wiper</string>
-	<string name="donateUi_main">Schenking</string>
 	<string name="donateUi_return">Terugkeer</string>
 	<string name="ui_check">Controleren</string>
 	<string name="ui_donate">Schenken</string>
@@ -12,4 +11,6 @@
 	<string name="ui_start">Begin</string>
 	<string name="ui_timerMain">Timer</string>
 	<string name="ui_timerNone">Geen timer</string>
+	<string name="title_activity_color">Kleurenscherm</string>
+	<string name="title_activity_donation">Schenking</string>
 </resources>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Burnin Wiper</string>
-	<string name="donateUi_main">기부</string>
 	<string name="ui_check">검사</string>
 	<string name="donateUi_return">반환</string>
 	<string name="ui_donate">기부</string>
@@ -12,4 +11,6 @@
 	<string name="ui_start">스타트</string>
 	<string name="ui_timerMain">시간제 노동자</string>
 	<string name="ui_timerNone">타이머 없음</string>
+	<string name="title_activity_color">컬러 디스플레이</string>
+	<string name="title_activity_donation">기부</string>
 </resources>
