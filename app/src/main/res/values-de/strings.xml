@@ -13,4 +13,6 @@
 	<string name="ui_timerNone">Kein Timer</string>
 	<string name="title_activity_color">Farbbildschirm</string>
 	<string name="title_activity_donation">Spende</string>
+	<string name="title_activity_anim">"Animation "</string>
+	<string name="ui_modeFourth">"Animation "</string>
 </resources>

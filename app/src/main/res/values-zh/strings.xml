@@ -13,4 +13,6 @@
 	<string name="ui_timerNone">没有计时器</string>
 	<string name="title_activity_color">彩色显示屏</string>
 	<string name="title_activity_donation">捐款</string>
+	<string name="title_activity_anim">动画</string>
+	<string name="ui_modeFourth">动画</string>
 </resources>

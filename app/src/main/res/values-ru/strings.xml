@@ -13,4 +13,6 @@
 	<string name="ui_timerNone">Нет таймера</string>
 	<string name="title_activity_color">Цветной дисплей</string>
 	<string name="title_activity_donation">дарение</string>
+	<string name="title_activity_anim">Анимация</string>
+	<string name="ui_modeFourth">Анимация</string>
 </resources>

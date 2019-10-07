@@ -2,13 +2,10 @@ package soheilkd.BurninWiper
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.ArrayAdapter
-import androidx.preference.PreferenceManager
 import androidx.appcompat.app.AppCompatActivity
-
+import androidx.preference.PreferenceManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,9 +16,9 @@ class MainActivity : AppCompatActivity() {
 		loadTimerItems()
 		loadPreferences()
 
-		StartButton.setOnClickListener { run { start() } }
-		CheckButton.setOnClickListener { run { start(true) } }
-		DonateButton.setOnClickListener { run { openDonate() } }
+		main_startButton.setOnClickListener { run { start() } }
+		main_checkButton.setOnClickListener { run { start(true) } }
+		main_donateButton.setOnClickListener { run { openDonate() } }
 	}
 
 	override fun onDestroy(){
@@ -33,31 +30,37 @@ class MainActivity : AppCompatActivity() {
 		val prefs = PreferenceManager.getDefaultSharedPreferences(this)
 
 		val editor = prefs.edit()
-		editor.putInt("ModeId", ModeRadioGroup.checkedRadioButtonId)
-		editor.putInt("TimerIndex", TimerSpinner.selectedItemPosition)
+		editor.putInt("ModeId", main_radioGroup.checkedRadioButtonId)
+		editor.putInt("TimerIndex", main_timeSpinner.selectedItemPosition)
 		editor.apply()
 	}
 
 	private fun loadPreferences() {
 		val prefs = PreferenceManager.getDefaultSharedPreferences(this)
-		ModeRadioGroup.clearCheck()
-		ModeRadioGroup.check(prefs.getInt("ModeId", R.id.modeRadioButton1))
-		TimerSpinner.setSelection(prefs.getInt("TimerIndex", 0))
+		main_radioGroup.clearCheck()
+		main_radioGroup.check(prefs.getInt("ModeId", R.id.main_radio1))
+		main_timeSpinner.setSelection(prefs.getInt("TimerIndex", 0))
 	}
 
 	private fun loadTimerItems() {
-		val timerItems = arrayOf(R.string.ui_timerNone, "5m", "10m", "20m", "30m", "1h", "2h", "3h")
+		val timerItems =
+			arrayOf(getString(R.string.ui_timerNone), "5m", "10m", "20m", "30m", "1h", "2h", "3h")
 		val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, timerItems)
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-		TimerSpinner.adapter = adapter
+		main_timeSpinner.adapter = adapter
 	}
 
 	private fun start(isChecking: Boolean = false) {
 		savePreferences()
-		val intent = Intent(this, ColorActivity::class.java)
-		intent.putExtra("burninwiper.colormode", ModeRadioGroup.checkedRadioButtonId)
-		intent.putExtra("burninwiper.timerindex", TimerSpinner.selectedItemPosition)
-		intent.putExtra("burninwiper.ischecking", isChecking)
+		val intent =
+			when (main_radioGroup.checkedRadioButtonId) {
+				R.id.main_radio4 -> Intent(this, AnimActivity::class.java) //aka animation mode
+				else -> Intent(this, ColorActivity::class.java) //aka other modes
+			}
+		intent.putExtra("TimerIndex", main_timeSpinner.selectedItemPosition)
+		intent.putExtra("ColorMode", main_radioGroup.checkedRadioButtonId)
+		intent.putExtra("IsChecking", isChecking)
+		intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
 		startActivity(intent)
 	}
 
@@ -66,5 +69,4 @@ class MainActivity : AppCompatActivity() {
 		val intent = Intent(this, DonationActivity::class.java)
 		startActivity(intent)
 	}
-
 }

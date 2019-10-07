@@ -13,4 +13,6 @@
 	<string name="ui_timerNone">لا الموقت</string>
 	<string name="title_activity_color">شاشة ملونة</string>
 	<string name="title_activity_donation">هبة</string>
+	<string name="title_activity_anim">حيوية</string>
+	<string name="ui_modeFourth">حيوية</string>
 </resources>

@@ -13,4 +13,6 @@
 	<string name="ui_timerNone">بدون تایمر</string>
 	<string name="title_activity_color">صفحه نمایش رنگی</string>
 	<string name="title_activity_donation">کمک مالی</string>
+	<string name="title_activity_anim">انیمیشن</string>
+	<string name="ui_modeFourth">انیمیشن</string>
 </resources>

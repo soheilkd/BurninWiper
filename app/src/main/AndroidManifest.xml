@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-		  xmlns:tools="http://schemas.android.com/tools"
-		  package="soheilkd.BurninWiper">
+		xmlns:tools="http://schemas.android.com/tools"
+		package="soheilkd.BurninWiper">
+
 	<uses-permission android:name="com.android.vending.BILLING" />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
 	<application
 			android:allowBackup="true"
 			android:icon="@mipmap/ic_launcher"
@@ -13,27 +15,33 @@
 			android:theme="@style/AppTheme"
 			tools:ignore="GoogleAppIndexingWarning">
 		<activity
+				android:name=".AnimActivity"
+				android:label="@string/title_activity_anim"
+				android:screenOrientation="portrait"
+				android:theme="@style/AppTheme.NoActionBar" />
+		<activity
 				android:name=".MainActivity"
 				android:label="@string/title_activity_main"
 				android:theme="@style/Theme.AppCompat.NoActionBar">
 			<intent-filter>
-				<action android:name="android.intent.action.MAIN"/>
-				<category android:name="android.intent.category.LAUNCHER"/>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
-
-			<meta-data android:name="android.app.shortcuts"
-					   android:resource="@xml/shortcuts" />
+			<meta-data
+					android:name="android.app.shortcuts"
+					android:resource="@xml/shortcuts" />
 		</activity>
 		<activity
 				android:name=".DonationActivity"
+				android:label="@string/title_activity_donation"
 				android:theme="@style/Theme.AppCompat"
-				android:label="@string/title_activity_donation">
-		</activity>
+				android:screenOrientation="portrait" />
 		<activity
 				android:name=".ColorActivity"
 				android:configChanges="orientation|keyboardHidden|screenSize"
 				android:label="@string/title_activity_color"
-				android:theme="@style/FullscreenTheme">
-		</activity>
+				android:screenOrientation="portrait"
+				android:theme="@style/FullscreenTheme" />
 	</application>
+
 </manifest>

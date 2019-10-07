@@ -2,20 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
 			  android:orientation="vertical"
 			  android:padding="10sp"
-			  tools:context="soheilkd.BurninWiper.DonationActivity"
+		tools:context=".DonationActivity"
 			  android:layout_width="match_parent"
 			  android:layout_height="match_parent">
-	<LinearLayout
-			android:orientation="vertical"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:id="@+id/MainLinearLayout">
 
-	</LinearLayout>
 	<Button
+			android:id="@+id/ReturnButton"
 			android:layout_width="wrap_content"
 			android:layout_height="64sp"
-			android:id="@+id/ReturnButton"
-			android:textSize="20sp"
-			android:text="@string/donateUi_return"/>
+			android:text="@string/donateUi_return"
+			android:textSize="15sp" />
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Buy "
+			android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+	<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/donation_layout"
+			android:orientation="vertical" />
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="For the developer"
+			android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
 </LinearLayout>

@@ -13,4 +13,6 @@
 	<string name="ui_timerNone">Zamanlayıcı Yok</string>
 	<string name="title_activity_color">"Renkli ekran "</string>
 	<string name="title_activity_donation">Bağış</string>
+	<string name="title_activity_anim">Animasyon</string>
+	<string name="ui_modeFourth">Animasyon</string>
 </resources>

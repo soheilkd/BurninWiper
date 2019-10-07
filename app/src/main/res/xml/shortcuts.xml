@@ -1,33 +1,42 @@
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
 	<shortcut
-			android:shortcutId="colorrotate"
 			android:enabled="true"
+			android:shortcutId="short_1"
 			android:icon="@drawable/ic_shortcut1"
 			android:shortcutShortLabel="@string/ui_modeFirst">
 		<intent
-				android:action="soheilkd.BurninWiper.runfirstmode"
+				android:action="soheilkd.BurninWiper.run1"
 				android:targetPackage="soheilkd.BurninWiper"
 				android:targetClass="soheilkd.BurninWiper.ColorActivity"/>
 	</shortcut>
 	<shortcut
-			android:shortcutId="blackandwhite"
 			android:enabled="true"
+			android:shortcutId="short_2"
 			android:icon="@drawable/ic_shortcut2"
 			android:shortcutShortLabel="@string/ui_modeSecond">
 		<intent
-				android:action="soheilkd.BurninWiper.runsecondmode"
+				android:action="soheilkd.BurninWiper.run2"
 				android:targetPackage="soheilkd.BurninWiper"
 				android:targetClass="soheilkd.BurninWiper.ColorActivity"/>
 	</shortcut>
 	<shortcut
-			android:shortcutId="whiteonly"
 			android:enabled="true"
+			android:shortcutId="short_3"
 			android:icon="@drawable/ic_shortcut3"
 			android:shortcutShortLabel="@string/ui_modeThird">
 		<intent
-				android:action="soheilkd.BurninWiper.runthirdmode"
+				android:action="soheilkd.BurninWiper.run3"
 				android:targetPackage="soheilkd.BurninWiper"
 				android:targetClass="soheilkd.BurninWiper.ColorActivity"/>
 	</shortcut>
-	<!-- Specify more shortcuts here. -->
+	<shortcut
+			android:enabled="true"
+			android:icon="@drawable/ic_shortcut4"
+			android:shortcutId="short_4"
+			android:shortcutShortLabel="@string/ui_modeFourth">
+		<intent
+				android:action="soheilkd.BurninWiper.run4"
+				android:targetClass="soheilkd.BurninWiper.AnimActivity"
+				android:targetPackage="soheilkd.BurninWiper" />
+	</shortcut>
 </shortcuts>

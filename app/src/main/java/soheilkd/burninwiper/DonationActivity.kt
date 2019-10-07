@@ -2,15 +2,13 @@ package soheilkd.BurninWiper
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.TypedValue
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.billingclient.api.*
-
 import kotlinx.android.synthetic.main.activity_donation.*
-import kotlin.collections.ArrayList
-import android.util.TypedValue
 
 
 class DonationActivity : AppCompatActivity(), PurchasesUpdatedListener {
@@ -63,7 +61,6 @@ class DonationActivity : AppCompatActivity(), PurchasesUpdatedListener {
 						skuList.add("soheilkd.burninwiper.donation3")
 						skuList.add("soheilkd.burninwiper.donation4")
 						skuList.add("soheilkd.burninwiper.donation5")
-						skuList.add("soheilkd.burninwiper.donation6")
 						val params = SkuDetailsParams.newBuilder()
 						params.setSkusList(skuList).setType(BillingClient.SkuType.INAPP)
 						var i = 0
@@ -77,7 +74,7 @@ class DonationActivity : AppCompatActivity(), PurchasesUpdatedListener {
 								listOfSkuDetails = skuDetailsList
 								for (sku in skuDetailsList) {
 									val index = i++
-									MainLinearLayout.addView(
+									donation_layout.addView(
 										Button(this@DonationActivity).also { button ->
 											run {
 												val r = resources
@@ -89,10 +86,11 @@ class DonationActivity : AppCompatActivity(), PurchasesUpdatedListener {
 
 												button.layoutParams =
 													LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, px.toInt())
-												button.text = "${sku.priceCurrencyCode}${sku.price}"
+
+												button.text = "${sku.description} for ${sku.price}"
 												px = TypedValue.applyDimension(
 													TypedValue.COMPLEX_UNIT_SP,
-													8f,
+													5f,
 													r.displayMetrics
 												)
 												button.textSize = px
@@ -110,13 +108,21 @@ class DonationActivity : AppCompatActivity(), PurchasesUpdatedListener {
 				}
 
 				override fun onBillingServiceDisconnected() {
-					// Try to restart the connection on the next request to
-					// Google Play by calling the startConnection() method.
+					Toast.makeText(
+						this@DonationActivity,
+						"Billing Service Disconnected",
+						Toast.LENGTH_LONG
+					).show()
+					finish()
 				}
 			})
 		}
 		catch  (e: Exception) {
-			Toast.makeText(this@DonationActivity, "Connection To Playstore Billing Failed", Toast.LENGTH_LONG).show()
+			Toast.makeText(
+				this@DonationActivity,
+				"Connection To Play Store Billing Failed",
+				Toast.LENGTH_LONG
+			).show()
 			finish()
 		}
 	}
