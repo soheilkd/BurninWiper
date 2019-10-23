@@ -6,7 +6,6 @@ import android.util.DisplayMetrics
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
 import kotlinx.android.synthetic.main.activity_anim.*
 import pl.droidsonroids.gif.GifImageView
 import kotlin.math.roundToInt
@@ -46,6 +45,11 @@ class AnimActivity : AppCompatActivity() {
 		animThread.start()
 		Helper.setTimer(intent.getIntExtra("TimerIndex", 0)) { finish() }
 		Toast.makeText(this, "Cautious: Device may heat up after a while", Toast.LENGTH_LONG).show()
+	}
+
+	override fun onPause() {
+		finish()
+		super.onPause()
 	}
 
 	private fun loadViews() {

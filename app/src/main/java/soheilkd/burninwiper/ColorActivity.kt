@@ -62,4 +62,9 @@ class ColorActivity : AppCompatActivity() {
 
 		start()
 	}
+
+	override fun onPause() {
+		finish()
+		super.onPause()
+	}
 }
