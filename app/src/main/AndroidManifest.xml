@@ -18,7 +18,7 @@
 				android:name=".AnimActivity"
 				android:label="@string/title_activity_anim"
 				android:screenOrientation="portrait"
-				android:theme="@style/AppTheme.NoActionBar" />
+				android:theme="@style/FullscreenTheme" />
 		<activity
 				android:name=".MainActivity"
 				android:label="@string/title_activity_main"

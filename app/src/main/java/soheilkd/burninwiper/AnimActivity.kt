@@ -54,7 +54,7 @@ class AnimActivity : AppCompatActivity() {
 
 	private fun loadViews() {
 		val metrics = DisplayMetrics()
-		windowManager.defaultDisplay.getMetrics(metrics)
+		windowManager.defaultDisplay.getRealMetrics(metrics)
 
 		anim_grid.columnCount = (metrics.widthPixels / metrics.density / 75).roundToInt() + 1
 		anim_grid.rowCount = (metrics.heightPixels / metrics.density / 75).roundToInt() + 1

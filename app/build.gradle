@@ -19,8 +19,8 @@ android {
         applicationId "soheilkd.BurninWiper"
         minSdkVersion 17
         targetSdkVersion 29
-        versionCode 24
-        versionName "1.11"
+        versionCode 25
+        versionName "1.12"
     }
     buildTypes {
         release {
