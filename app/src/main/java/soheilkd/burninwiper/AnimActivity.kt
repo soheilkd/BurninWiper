@@ -36,18 +36,23 @@ class AnimActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_anim)
-		anim_grid.setOnClickListener { finish() }
+		anim_grid.setOnClickListener { onPause() }
 
 		Helper.makeImmersive(window, anim_grid)
 		if (intent.getBooleanExtra("IsChecking", false))
 			return
 		loadViews()
 		animThread.start()
-		Helper.setTimer(intent.getIntExtra("TimerIndex", 0)) { finish() }
+		Helper.setTimer(intent.getIntExtra("TimerIndex", 0)) { onPause() }
 		Toast.makeText(this, "Cautious: Device may heat up after a while", Toast.LENGTH_LONG).show()
 	}
 
 	override fun onPause() {
+		animThread.interrupt()
+		for (view in gifViews) {
+			view.setImageDrawable(null)
+		}
+		SystemClock.sleep(100)
 		finish()
 		super.onPause()
 	}
@@ -62,7 +67,6 @@ class AnimActivity : AppCompatActivity() {
 		for (i in 0..anim_grid.columnCount * anim_grid.rowCount) {
 			val view = GifImageView(this)
 			view.layoutParams = ViewGroup.LayoutParams(dps, dps)
-			view.setOnClickListener { finish() }
 			gifViews.add(view)
 		}
 		for (view in gifViews) {
