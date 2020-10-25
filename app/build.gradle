@@ -7,10 +7,10 @@ apply plugin: 'kotlin-android-extensions'
 android {
     signingConfigs {
         debug {
-            storeFile file('D:\\Dev\\Android\\Deployment.keystore')
-            storePassword 'Soheil2015'
+            storeFile file('D:\\Dev\\Android\\Deployment.jks')
+            storePassword 'AndroidBuild'
             keyAlias = 'deployment'
-            keyPassword 'Soheil2015'
+            keyPassword 'AndroidBuild'
         }
     }
     compileSdkVersion 29
